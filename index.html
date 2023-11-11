@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      margin:0;
+    }
+    .container {
+      width:748px;
+      height:748px;
+      display: grid;
+      grid-template-columns: repeat(22, 34px);
+      grid-template-rows: repeat(22, 34px);
+      background-color: F0F1EC;
+      border: 10px solid black;
+    }
+    .container > div {
+      border: 10px solid black;
+    }
+    .square:nth-child(1) {
+      background-color: #E72F24;
+      grid-column: span 9;
+      grid-row: span 12;
+    }
+    .square:nth-child(2) {
+      background-color: #F0F1EC;
+      grid-column: span 13;
+      grid-row: span 12;
+    }
+    .square:nth-child(3) {
+      background-color: #F0F1EC;
+      grid-column: span 9;
+      grid-row: span 8;
+    }    
+    .square:nth-child(4) {
+      background-color: #F0F1EC;
+      grid-column: span 11;
+      grid-row: span 8;
+    }
+    .square:nth-child(5) {
+      background-color: #004592;
+      grid-column: span 2;
+      grid-row: span 4;
+    }  
+    .square:nth-child(6) {
+      background-color: #F0F1EC;
+      grid-column: span 9;
+      grid-row: span 2;
+    }  
+    .square:nth-child(7) {
+      background-color: #F9D01E;
+      grid-column: span 6;
+      grid-row: span 2;
+    }
+    .square:nth-child(8) {
+      background-color: #232629;
+      grid-column: span 5;
+      grid-row: span 2;
+    }    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <h1>A dumb Mondrian Potrait lol</h1>
+  <p>Made with CSS Grid</p>
+</body>
+
+</html>
